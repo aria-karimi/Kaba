@@ -1,0 +1,10 @@
+# ignore ANTLR4 generated files
+antlr/*
+!antlr/*.g4
+!antlr/*.kaba
+
+# ignore python cache
+**/__pycache__
+
+# ignore vscode files
+.vscode/*
