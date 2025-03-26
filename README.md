@@ -5,6 +5,7 @@
 ![Digits Forbidden](https://img.shields.io/badge/digits-forbidden-blue)
 ![Turkish Grammar Inside](https://img.shields.io/badge/grammar-Turkish-orange)
 ![100% Profanity Coverage](https://img.shields.io/badge/profanity-100%25-ff69b4)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Kaba** is a parody programming language inspired by the furious ramblings of a Turkish uncle yelling at a malfunctioning TV. It’s loud, it’s crude, and it’s oddly expressive. Kaba is *not* meant for real-world use; unless your real world involves a lot of yelling and some serious Turkish grammar.
 
@@ -54,7 +55,7 @@ You’ll love it. Or hate it. Either way, it’ll yell back.
 - **Operators**: `kat`, `sök`, `çak`, `yar`, `aynı`, `koymuş`, `koymamış`, `tersi`, `ve`, `ya`
 - **Conditionals**: `siktiyse`, `sikmediyse`
 - **Loops**: `sikerken`, `sallayarak`
-- **Functions**: Use `kus` to return and surround bodies with `hadi`...`siktir`
+- **Functions**: Use `tükür` to return and surround bodies with `hadi`...`siktir`
 - **Classes**: Yep. Object-oriented obscenity.
 
 ## 📦 Features
@@ -92,3 +93,6 @@ Want to help Kaba curse in more ways? PRs welcome.
 
 ## 🐦 Contact
 Made by [Aria Karimi](https://github.com/aria-karimi)
+
+## 📝 License
+This project is licensed under the [MIT License](LICENSE).

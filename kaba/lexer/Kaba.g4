@@ -32,13 +32,13 @@ terminator
 //////////////////////////////
 
 declarationStmt
-    // e.g. Düz Bok'tan myVar çök
+    // e.g. Düz Bok'tan bokbir çök
     : typeSpec BOK SUFFIX variableName ÇÖK
     | typeSpec BOK TORBASI SUFFIX variableName ÇÖK
     ;
 
 assignmentStmt
-    // e.g. myVar'e anotherVar'i sok
+    // e.g. bokbir'e bokiki'yi sok
     : variableRef SUFFIX expression SUFFIX SOK
     ;
 
@@ -59,7 +59,7 @@ whileStmt
     ;
 
 forStmt
-    // e.g. index'i array'nda sallayarak hadi ... siktir
+    // e.g. bok'u boktorbası'nda sallayarak hadi ... siktir
     : variableName SUFFIX arrayRef SUFFIX SALLAYARAK block
     ;
 
@@ -98,8 +98,8 @@ blockWithReturn
     ;
 
 returnStmt
-    // e.g. expr'i kus amk
-    : expression SUFFIX KUS terminator
+    // e.g. bokbir'i tükür amk
+    : expression SUFFIX TÜKÜR terminator
     ;
 
 //////////////////////////////
@@ -121,14 +121,14 @@ classMember
 //////////////////////////////
 
 paramList
-    // e.g. şöyle Düz Bok x virgül Sulu Bok y böyle
+    // e.g. şöyle Düz Bok'tan bokbir virgül Sulu Bok'tan bokiki böyle
     : ŞÖYLE param (VIRGUL param)* BÖYLE
     | ŞÖYLE BÖYLE // possibly empty
     ;
 
 param
-    : typeSpec BOK variableName
-    | typeSpec BOK TORBASI variableName
+    : typeSpec BOK SUFFIX variableName
+    | typeSpec BOK TORBASI SUFFIX variableName
     ;
 
 //////////////////////////////
@@ -248,7 +248,7 @@ SIKMEDIYSE    : 'sikmediyse';
 SIKERKEN      : 'sikerken';
 SALLAYARAK    : 'sallayarak';
 ÇÖK           : 'çök';
-KUS           : 'kus';
+TÜKÜR         : 'tükür';
 DENESENE      : 'denesene';
 SIÇARSA       : 'sıçarsa';
 REZALET       : 'rezalet';
